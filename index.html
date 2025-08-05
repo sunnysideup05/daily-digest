@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Digest - AI-Powered News Summaries</title>
+    <meta name="description" content="Get AI-powered summaries of your essential emails, newsletters, and YouTube channels delivered how you want them. Stay informed without the overwhelm.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☀️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Analytics - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">☀️</span>
+                    <span class="logo-text">Morning Digest</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <button class="btn btn-primary" onclick="scrollToSignup()">Get Early Access</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">✨ AI-Powered Intelligence</span>
+                </div>
+                <h1 class="hero-title">Staying Informed in a Fast-Paced World</h1>
+                <p class="hero-subtitle">AI-powered summaries of your essential emails, newsletters, and YouTube channels, delivered how you want them.</p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSignup()">
+                        Get Early Access
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <p class="cta-subtext">Join 1,000+ professionals staying ahead of the curve</p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="email-card">
+                            <div class="email-header">
+                                <div class="email-avatar">📧</div>
+                                <div class="email-info">
+                                    <div class="email-from">Morning Digest</div>
+                                    <div class="email-subject">Your Daily Brief - 3 min read</div>
+                                </div>
+                                <div class="email-time">8:00 AM</div>
+                            </div>
+                            <div class="email-body">
+                                <div class="summary-section">
+                                    <h4>🚀 Tech & Product</h4>
+                                    <ul class="bullet-list">
+                                        <li>OpenAI launches new reasoning model with improved capabilities</li>
+                                        <li>Meta's AR glasses show promising early demos</li>
+                                        <li>B2B SaaS growth strategies for 2024</li>
+                                    </ul>
+                                </div>
+                                <div class="summary-section">
+                                    <h4>💼 Business & Strategy</h4>
+                                    <ul class="bullet-list">
+                                        <li>Remote work productivity insights from 500+ companies</li>
+                                        <li>Q4 fundraising landscape shifts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-content">
+                <h2 class="section-title">The Information Overload Problem</h2>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">📨</div>
+                        <h3>Newsletter Graveyard</h3>
+                        <p>Your inbox is overflowing with newsletters you subscribed to but never have time to read.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">⏰</div>
+                        <h3>Context Switching Drain</h3>
+                        <p>Switching between deep work and catching up on news leaves you doing neither task well.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">😰</div>
+                        <h3>FOMO in Meetings</h3>
+                        <p>Your biggest nightmare: being in a meeting and not knowing about a recent development everyone's discussing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="section-title">One Email. All Your Essential Updates.</h2>
+                <p class="section-subtitle">Transform hours of reading into minutes of insights</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Summaries</h3>
+                    <p>Advanced AI extracts key insights from your newsletters and YouTube subscriptions, delivering only what matters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Bullet Point Format</h3>
+                    <p>Scannable, digestible insights organized by topic. Get the full picture in under 3 minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Delivery</h3>
+                    <p>Choose your topics, frequency, and format. Get your digest when and how you want it.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Source Links</h3>
+                    <p>Interested in diving deeper? One click takes you to the original content for full context.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smart Filtering</h3>
+                    <p>AI learns your preferences and highlights the most relevant updates for your role and industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Channel Support</h3>
+                    <p>Newsletters, YouTube channels, podcasts, and news sources - all synthesized into one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Connect Your Sources</h3>
+                        <p>Link your newsletters, YouTube subscriptions, and preferred news sources</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Processing</h3>
+                        <p>Our AI reads, analyzes, and extracts key insights from all your content</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Receive Your Digest</h3>
+                        <p>Get a beautifully formatted email with all the insights that matter to you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Early Users Say</h2>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    "With AI moving so fast, I love that I can quickly catch up on all my news in a few minutes!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <div class="author-name">Series B YC Founder</div>
+                        <div class="author-title">Tech Startup</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="signup" id="signup">
+        <div class="container">
+            <div class="signup-content">
+                <h2 class="signup-title">Get Early Access</h2>
+                <p class="signup-subtitle">Join ambitious professionals who refuse to fall behind. Be the first to try Morning Digest.</p>
+                
+                <form class="signup-form" id="signupForm">
+                    <div class="form-group">
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="Enter your email address" 
+                               required 
+                               class="form-input">
+                        <button type="submit" class="btn btn-primary btn-form">
+                            Get Early Access
+                        </button>
+                    </div>
+                    <p class="form-disclaimer">
+                        We'll notify you when Morning Digest is ready. No spam, unsubscribe anytime.
+                    </p>
+                </form>
+
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-content">
+                        <div class="success-icon">✅</div>
+                        <h3>You're on the list!</h3>
+                        <p>We'll let you know as soon as Morning Digest is ready.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">☀️</span>
+                        <span class="logo-text">Morning Digest</span>
+                    </div>
+                    <p class="footer-tagline">Stay informed, stay ahead</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:hello@morningdigest.ai" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Morning Digest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
