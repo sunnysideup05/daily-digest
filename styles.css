@@ -266,12 +266,13 @@ body {
 }
 
 .bullet-list li {
-    padding: 6px 0;
+    padding: 4px 0;
     padding-left: 16px;
     position: relative;
     font-size: 13px;
     color: #555;
     line-height: 1.4;
+    text-align: left;
 }
 
 .bullet-list li::before {
@@ -448,32 +449,66 @@ body {
 }
 
 .testimonial-card {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 48px 40px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.1);
+    font-family: serif;
+    line-height: 1;
 }
 
 .testimonial-quote {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
     margin-bottom: 32px;
-    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
 }
 
 .testimonial-author {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.author-avatar {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .author-info {
-    text-align: center;
+    text-align: left;
 }
 
 .author-name {
     font-weight: 600;
     margin-bottom: 4px;
+    color: white;
 }
 
 .author-title {
@@ -689,7 +724,29 @@ body {
         transform: none;
     }
     
+    .testimonial-card {
+        padding: 32px 24px 24px;
+        margin: 0 16px;
+    }
+    
+    .quote-icon {
+        font-size: 60px;
+        top: -8px;
+    }
+    
     .testimonial-quote {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    
+    .testimonial-author {
+        gap: 12px;
+        padding-top: 20px;
+    }
+    
+    .author-avatar {
+        width: 40px;
+        height: 40px;
         font-size: 20px;
     }
 }

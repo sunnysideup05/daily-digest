@@ -1,0 +1,13 @@
+{
+  "name": "daily-digest",
+  "version": "1.0.0",
+  "description": "AI-powered daily digest landing page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["landing-page", "ai", "newsletter", "digest"],
+  "author": "Daily Digest",
+  "license": "MIT"
+}

@@ -33,19 +33,19 @@ function isValidEmail(email) {
 
 // Handle form submission
 function handleFormSubmission(event) {
-    event.preventDefault();
-    
     const form = event.target;
     const emailInput = form.querySelector('#email');
     const email = emailInput.value.trim();
     
-    // Validate email
+    // Validate email before submission
     if (!email) {
+        event.preventDefault();
         showError('Please enter your email address');
         return;
     }
     
     if (!isValidEmail(email)) {
+        event.preventDefault();
         showError('Please enter a valid email address');
         return;
     }
@@ -55,20 +55,18 @@ function handleFormSubmission(event) {
         email_domain: email.split('@')[1]
     });
     
-    // Simulate form submission (replace with actual backend call)
-    submitEmail(email)
-        .then(() => {
-            showSuccess();
-            trackEvent('email_signup_success', {
-                email_domain: email.split('@')[1]
-            });
-        })
-        .catch((error) => {
-            showError('Something went wrong. Please try again.');
-            trackEvent('email_signup_error', {
-                error: error.message
-            });
-        });
+    // For Formspree, we let the form submit naturally
+    // But we can show a loading state
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Submitting...';
+    submitButton.disabled = true;
+    
+    // The success will be handled by Formspree redirect or we can use AJAX
+    setTimeout(() => {
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    }, 2000);
 }
 
 // Simulate email submission (replace with actual API call)
