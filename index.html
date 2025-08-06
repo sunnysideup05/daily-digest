@@ -224,9 +224,27 @@
                 <h2 class="signup-title">Get Early Access</h2>
                 <p class="signup-subtitle">Join ambitious professionals who refuse to fall behind. Be the first to try Daily Digest.</p>
                 
-                <div class="typeform-container">
-                    <div data-tf-live="01K1YYAB499HHZPN5QFE21B1Y0"></div>
-                    <script src="//embed.typeform.com/next/embed.js"></script>
+                <form class="signup-form" id="signupForm" action="https://formspree.io/f/xkgwwbvp" method="POST">
+                    <div class="form-group">
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="Enter your email address" 
+                               required 
+                               class="form-input">
+                        <input type="hidden" name="_subject" value="New Daily Digest Subscriber">
+                        <button type="submit" class="btn btn-primary btn-form">
+                            Get Early Access
+                        </button>
+                    </div>
+                </form>
+
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-content">
+                        <div class="success-icon">✅</div>
+                        <h3>You're on the list!</h3>
+                        <p>We'll let you know as soon as Daily Digest is ready.</p>
+                    </div>
                 </div>
                 
                 <p class="form-disclaimer">

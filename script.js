@@ -221,8 +221,11 @@ function initializeInteractionTracking() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Typeform is now handling the form submission
-    // No need for custom form handlers
+    // Setup form submission
+    const signupForm = document.getElementById('signupForm');
+    if (signupForm) {
+        signupForm.addEventListener('submit', handleFormSubmission);
+    }
     
     // Initialize animations and interactions
     initializeAnimations();
