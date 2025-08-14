@@ -80,11 +80,6 @@ Replace the mock email submission in `script.js` with your preferred service:
 - Safari: Full support
 - Mobile browsers: Optimized experience
 
-## Contact
-
-For questions about this landing page or Morning Digest:
-- Email: hello@morningdigest.ai
-- Website: [morningdigest.ai](https://morningdigest.ai)
 
 ---
 
